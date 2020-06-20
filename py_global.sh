@@ -26,6 +26,8 @@ if [ $? -eq 0 ]; then
     pipx install neovim-remote
     pipx install pytest
     #pipx install vex
+    pipx install nose
+    pipx install wakatime
   else
     echo -e "\npipx installation failed therefore default python packages not installed"
   fi
