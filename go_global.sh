@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # export GOPATH=~/work/go
 
 go get -u github.com/motemen/gore/cmd/gore

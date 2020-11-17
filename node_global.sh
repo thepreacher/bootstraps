@@ -11,7 +11,7 @@ npm install -g pnpm
 # importing helper
 npm install -g import-js
 
-# Make sure we’re using the latest Homebrew
+# Package updaters
 pnpm add -g npm-check
 pnpm add -g npm-check-updates
 
@@ -64,7 +64,7 @@ pnpm add -g trash-cli
 
 # framework7 cli
 #pnpm add -g framework7-cli
-pnpm add -g stylelint 
+pnpm add -g stylelint
 
 # styleling
 
@@ -88,3 +88,4 @@ pnpm add -g indium
 
 
 echo -e "\nPackage installation complete - Don't forget to reshim so that new packages can be recognised"
+echo -e "\n If required run 'pnpm install-completion' to get completions working or pnpm."

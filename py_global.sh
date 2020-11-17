@@ -6,8 +6,8 @@ if [ $? -eq 0 ]; then
   pip install -U configparser
   pip install -U pipx
   pip install -U pipdeptree
-  
-  # first reshim python to ensure pipx is available for subsequent commands to work	
+
+  # first reshim python to ensure pipx is available for subsequent commands to work
   if asdf reshim python; then
 	# first uninstall previous packages
 	if pipx uninstall-all; then
@@ -28,6 +28,9 @@ if [ $? -eq 0 ]; then
     	pipx install mypy
     	pipx install pyflakes
 		pipx install jupyterlab --include-deps
+	    pipx install jill
+		pipx install xxh-xxh
+		pipx install asciinema
 	else
 		echo -e "\npipx uninstall-all failed or didn't excute"
 	fi
