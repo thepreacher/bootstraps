@@ -6,6 +6,7 @@ if [ $? -eq 0 ]; then
   pip install -U configparser
   pip install -U pipx
   pip install -U pipdeptree
+  pip install -U debugpy
 
   # first reshim python to ensure pipx is available for subsequent commands to work
   if asdf reshim python; then
@@ -27,7 +28,7 @@ if [ $? -eq 0 ]; then
     	pipx install isort
     	pipx install mypy
     	pipx install pyflakes
-		pipx install jupyterlab --include-deps
+		  pipx install jupyterlab --include-deps
 	    pipx install jill
 		pipx install xxh-xxh
 		pipx install asciinema
